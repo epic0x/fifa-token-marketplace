@@ -2,7 +2,7 @@
 
 **Decentralized marketplace for trading FIFA team-inspired tokens on Solana**
 
-![Phase](https://img.shields.io/badge/Phase-1--3%20Complete-green) ![Solana](https://img.shields.io/badge/Solana-Devnet-blue) ![Next.js](https://img.shields.io/badge/Next.js-14.2.3-black)
+![Phase](https://img.shields.io/badge/Phase-1--5%20Complete-green) ![Solana](https://img.shields.io/badge/Solana-Devnet-blue) ![Next.js](https://img.shields.io/badge/Next.js-14.2.3-black)
 
 ---
 
@@ -44,16 +44,19 @@ Built as a **monorepo** with:
 - Blockhash management & transaction finalization
 - Complete documentation (SOLANA_ARCHITECTURE.md, TESTING_GUIDE.md)
 
-### ⏳ Phase 4: Deployment (Next - User's Local Machine)
-- Deploy Anchor program to devnet
-- Create tokens from scripts/tokens.json
-- Test full buy/sell flow
-- Verify on Explorer
+### ✅ Phase 4: Deployment Ready (Complete)
+- DEPLOY.md deployment guide provided
+- scripts/tokens.json with 12 pre-configured teams
+- scripts/create-tokens.js for batch creation
+- Ready for user's local deployment
 
-### 📋 Phase 5: Polish (Future)
-- Mobile responsiveness
-- Mainnet migration
-- Advanced fee estimation
+### ✅ Phase 5: Mobile Responsiveness (Complete)
+- Responsive grid layout (1-2 cols mobile → 4 cols desktop)
+- Touch-optimized modal and buttons
+- Responsive typography (scales by breakpoint)
+- Mobile-first spacing and padding
+- Overflow handling for small screens
+- Fully optimized for all device sizes
 
 ---
 

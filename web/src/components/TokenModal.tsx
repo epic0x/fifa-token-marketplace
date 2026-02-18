@@ -134,37 +134,37 @@ export default function TokenModal({ token, open, onClose }: TokenModalProps) {
         onClick={onClose}
       >
         <div
-          className="bg-gray-900 border border-purple-500 rounded-lg p-8 max-w-md w-full mx-4"
+          className="bg-gray-900 border border-purple-500 rounded-lg p-4 sm:p-6 lg:p-8 max-w-md w-full mx-3 sm:mx-4 max-h-[90vh] overflow-y-auto"
           onClick={(e) => e.stopPropagation()}
         >
           {/* Header */}
-          <div className="flex justify-between items-start mb-6">
-            <div>
-              <h2 className="text-3xl font-bold text-white">{token.teamName}</h2>
-              <p className="text-purple-400 font-semibold">{token.symbol}</p>
+          <div className="flex justify-between items-start mb-4 sm:mb-6 gap-3">
+            <div className="flex-1 min-w-0">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white truncate">{token.teamName}</h2>
+              <p className="text-purple-400 font-semibold text-sm">{token.symbol}</p>
             </div>
             <button
               onClick={onClose}
-              className="text-gray-400 hover:text-white text-2xl"
+              className="text-gray-400 hover:text-white text-xl sm:text-2xl flex-shrink-0"
             >
               ✕
             </button>
           </div>
 
           {/* Price Info */}
-          <div className="mb-6 pb-6 border-b border-gray-700">
-            <p className="text-gray-400 text-sm mb-1">Current Price</p>
-            <p className="text-3xl font-bold text-yellow-400">${token.price.toFixed(4)}</p>
+          <div className="mb-4 sm:mb-6 pb-4 sm:pb-6 border-b border-gray-700">
+            <p className="text-gray-400 text-xs sm:text-sm mb-1">Current Price</p>
+            <p className="text-2xl sm:text-3xl font-bold text-yellow-400">${token.price.toFixed(4)}</p>
             <p className="text-gray-500 text-xs mt-2">
               24h Volume: ${(token.volume24h / 1000).toFixed(1)}K
             </p>
           </div>
 
           {/* Tabs */}
-          <div className="flex gap-2 mb-6">
+          <div className="flex gap-1 sm:gap-2 mb-4 sm:mb-6">
             <button
               onClick={() => setActiveTab("chart")}
-              className={`flex-1 py-2 px-4 rounded-lg font-semibold text-sm transition ${
+              className={`flex-1 py-2 px-2 sm:px-4 rounded text-xs sm:text-sm font-semibold transition ${
                 activeTab === "chart"
                   ? "bg-blue-600 text-white"
                   : "bg-gray-800 text-gray-400 hover:text-white"
@@ -174,7 +174,7 @@ export default function TokenModal({ token, open, onClose }: TokenModalProps) {
             </button>
             <button
               onClick={() => setActiveTab("buy")}
-              className={`flex-1 py-2 px-4 rounded-lg font-semibold text-sm transition ${
+              className={`flex-1 py-2 px-2 sm:px-4 rounded text-xs sm:text-sm font-semibold transition ${
                 activeTab === "buy"
                   ? "bg-purple-600 text-white"
                   : "bg-gray-800 text-gray-400 hover:text-white"
@@ -184,7 +184,7 @@ export default function TokenModal({ token, open, onClose }: TokenModalProps) {
             </button>
             <button
               onClick={() => setActiveTab("sell")}
-              className={`flex-1 py-2 px-4 rounded-lg font-semibold text-sm transition ${
+              className={`flex-1 py-2 px-2 sm:px-4 rounded text-xs sm:text-sm font-semibold transition ${
                 activeTab === "sell"
                   ? "bg-red-600 text-white"
                   : "bg-gray-800 text-gray-400 hover:text-white"

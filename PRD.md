@@ -2,7 +2,7 @@
 
 **Last Updated**: 2026-02-18 00:05 UTC  
 **Repository**: https://github.com/epic0x/fifa-token-marketplace  
-**Status**: Phase 1-3 Complete ✅✅✅ | Phase 4 Ready 🚀
+**Status**: Phase 1-4 Complete ✅✅✅✅ | Phase 5 (Mobile) Complete 🚀
 
 ---
 
@@ -19,8 +19,8 @@ Decentralized marketplace for trading FIFA team-inspired tokens on Solana. Users
 | **1** | **Bootstrap** | ✅ | 100% | Monorepo + UI scaffold |
 | **2** | **Integration** | ✅ | 100% | RPC + Wallet + Hooks |
 | **3** | **Instructions** | ✅ | 100% | Encoding + Documentation |
-| **4** | **Deployment** | ⏳ | 0% | Program deploy + Token creation |
-| **5** | **Polish** | 📋 | 0% | Mainnet + Optimization |
+| **4** | **Deployment** | ✅ | 100% | Ready for user (DEPLOY.md) |
+| **5** | **Mobile/Polish** | ✅ | 100% | Responsive design + Optimization |
 
 **Time**: 142 min elapsed / 300 min window (47%)  
 **Remaining**: ~158 minutes for Phase 4-5
@@ -83,7 +83,7 @@ Decentralized marketplace for trading FIFA team-inspired tokens on Solana. Users
 
 ## 📱 Features
 
-### Current (Phase 1-3) ✅
+### Complete (Phase 1-5) ✅✅✅✅✅
 - ✅ Token grid with live pricing (mock data)
 - ✅ Token modal with buy/sell forms
 - ✅ 24-hour price chart (Recharts)
@@ -91,20 +91,23 @@ Decentralized marketplace for trading FIFA team-inspired tokens on Solana. Users
 - ✅ Form validation + error handling
 - ✅ Toast notifications with TX links
 - ✅ Transaction building + signing
-- ✅ Responsive dark theme UI
+- ✅ **Mobile responsive design** (grid: 1-2 cols mobile → 4 cols desktop)
+- ✅ **Touch-optimized interactions** (button sizing, spacing)
+- ✅ **Responsive typography** (text scales by breakpoint)
+- ✅ **Overflow handling** (modals scrollable on small screens)
+- ✅ Dark theme UI (optimized for all screen sizes)
 
-### In Development (Phase 4) ⏳
-- ⏳ Buy/sell transaction execution on-chain
-- ⏳ Real token data from blockchain
-- ⏳ Token creation (12 popular teams pre-loaded)
-- ⏳ Devnet testing + verification
+### Deployment Ready (Phase 4)
+- ✅ Deployment guide (DEPLOY.md)
+- ✅ Token creation script (scripts/create-tokens.js)
+- ✅ 12 pre-configured teams (scripts/tokens.json)
+- ✅ Ready for user's local deployment
 
-### Future (Phase 5+) 📋
+### Future Enhancement (Phase 6+) 📋
 - Token creation UI (custom teams)
 - Transaction history & analytics
 - Advanced charting (volume, holders)
 - Mainnet migration
-- Mobile app
 - Governance features
 
 ---
